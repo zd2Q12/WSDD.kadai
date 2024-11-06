@@ -1,0 +1,194 @@
+@charset "UTF-8";
+
+/*ボックスの視覚化*/
+* {
+	color: #000;
+}
+
+/*初期化*/
+ul {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+/*-----------
+汎用クラス
+-------------*/
+.center-container {
+	min-width: 700px;
+	max-width: 980px;
+	margin: 0 auto;
+}
+
+
+
+/*---------
+各パーツ設定
+----------*/
+/*ヘッダー　フッター*/
+header,
+footer {
+	background-color: rgb(255, 255, 255);
+	color: rgb(0, 0, 64);
+}
+
+header {
+	padding: 20px 0 0;
+}
+
+header a {
+	color: #fff;
+}
+
+.gnav-wrap {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.gnav-lists {
+	display: flex;
+}
+
+.gnav-list {
+	width: 20%;
+	height: 60px;
+	background-color: white;
+	position: relative;
+	transition: all .3s;
+}
+
+.gnav-list:hover {
+	background-color: rgb(255, 128, 0);
+}
+
+.gnav-list:not(:first-child)::before {
+	content: "";
+	width: 1px;
+	height: 100%;
+	background-color: #fff;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: all .3s;
+}
+
+.gnav-list:hover::before {
+	background-color: rgb(255, 128, 0);
+}
+
+.gnav-list a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	text-decoration: none;
+	color: #1b4059;
+	font-size: 15px;
+	letter-spacing: 0.05em;
+	font-weight: 600;
+	transition: all .3s;
+}
+
+.gnav-list:hover a {
+	color: #fff;
+}
+
+footer {
+	text-align: center;
+	padding: 20px;
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+	bottom: 0;
+	width: 100%;
+}
+
+/*メイン*/
+main {
+	margin: 0 20px;
+	padding: 20px;
+}
+
+main h2,
+p {
+	padding-left: 7%;
+}
+
+/*サイドバー*/
+.right {
+	margin: 0 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	/*右寄せ*/
+}
+
+.right ul {
+	list-style-type: none;
+	/*リストのマーカーを消す*/
+	padding: 0;
+}
+
+.right li {
+	margin: 10px 0;
+}
+
+.right a {
+	padding: 10px 15px;
+	text-decoration: none;
+}
+
+.right a:hover {
+	color: #007BFF;
+}
+
+.error {
+	color: red;
+}
+
+table {
+	width: 87%;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+table tr {
+	border-bottom: solid 1px #eee;
+	cursor: pointer;
+}
+
+table tr:hover {
+	background-color: #d4f0fd;
+}
+
+table th,
+table td {
+	text-align: center;
+	width: 25%;
+	padding: 15px 0;
+	border: 1px solid #000;
+}
+
+.submit {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	/*右寄せ*/
+	margin: 0 30px;
+}
+
+.submit input {
+	background-color: khaki;
+	padding: 10px 15px;
+	text-decoration: none;
+	border-radius: 5px;
+	/*角丸く*/
+	display: inline-block;
+}

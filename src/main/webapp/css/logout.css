@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+* {
+	box-sizing: border-box;
+	color: #000;
+}
+
+/*-----------
+汎用クラス
+-------------*/
+.center-container {
+	min-width: 700px;
+	max-width: 980px;
+	margin: 0 auto;
+}
+
+/*---------
+各パーツ設定
+----------*/
+/*ヘッダー　フッター*/
+header,
+footer {
+	background-color: rgb(255, 255, 255);
+	color: rgb(0, 0, 64);
+}
+
+header {
+	padding: 20px 0 0;
+}
+
+footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	text-align: center;
+	padding: 20px;
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+	width: 100%;
+}
+.container {
+	width: 300px;
+	margin: 30px auto;
+	padding: 20px;
+	background-color: #fff;
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+/* ヘッダーとフッターの中央揃え */
+h2 {
+	margin-bottom: 20px;
+}
+
+.fsize {
+	text-align: center;
+}
+

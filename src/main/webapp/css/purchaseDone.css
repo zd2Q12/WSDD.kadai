@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+* {
+	box-sizing: border-box;
+	color: #000;
+	margin: 0;/* マージンをリセット */
+}
+/*-----------
+汎用クラス
+-------------*/
+.center-container {
+	min-width: 700px;
+	max-width: 980px;
+	margin: 0 auto;
+}
+/*---------
+各パーツ設定
+----------*/
+/*ヘッダー　フッター*/
+header,
+footer {
+	background-color: rgb(255, 255, 255);
+	color: rgb(0, 0, 64);
+	text-align: center;
+}
+
+header {
+	padding: 20px 0 0;
+}
+footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 20px;
+
+}
+.main{
+    display: flex; /* フレックスボックスを使用 */
+    flex-direction: column; /* 縦に並べる */
+    justify-content: center; /* 縦中央寄せ */
+    align-items: center; /* 横中央寄せ */
+    min-height: calc(100vh - 100px);/* フッターの高さを考慮して調整 */
+ 	text-align: center;
+	padding: 20px;
+}
+h2{
+	margin-bottom: 20px;
+}
+a{
+	margin: 5px 0;/* リンクの上下にマージンを追加 */
+}
